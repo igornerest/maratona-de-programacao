@@ -1,4 +1,4 @@
-// Greatest Common Divisor e Least Commong MUltiple
+// Greatest Common Divisor e Least Common Multiple
 // MDC e MMC
 #include <bits/stdc++.h>
 
@@ -16,7 +16,7 @@ typedef vector<int>			vi;
 #define	se	second
 #define	eb	emplace_back
 
-// ha uma funcao nativa de gdc -> __gdc(a, b)
+// ha uma funcao nativa de gcd -> __gdc(a, b)
 int gcd(int a, int b) {
 	if(a == 0) return b; 
 	if(b == 0) return a;
