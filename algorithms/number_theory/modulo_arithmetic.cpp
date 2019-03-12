@@ -16,7 +16,9 @@ typedef vector<int>			vi;
 
 int x, y, d; 
 
+// uma modificao do algoritmo de Euclides
 // para uma equacao ax + by = 1
+// d = mdc(a, b)
 void extendedEuclid(int a, int b) {
 	if(b == 0) {
 		x = 1;
@@ -36,7 +38,7 @@ int main() {
 	extendedEuclid(a, b);
 	
 	cout << "Para " << a << "x + " << b << "y = " << c <<  ", temos:" << endl;
-	cout << "a = " << x * (c / __gcd(a, b)) << endl;
-	cout << "b = " << y * (c / __gcd(a, b)) << endl;
+	cout << "a = " << x * (c / d) << endl;
+	cout << "b = " << y * (c / d) << endl;
 	return 0;
 }
